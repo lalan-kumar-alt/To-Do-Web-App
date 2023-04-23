@@ -1,0 +1,172 @@
+
+  .Addcircle{
+    color: rgb(137, 255, 137);
+    font-size: 18px;
+  }
+
+.Addcircle:hover{
+  color: #0df15d;
+}
+.heading{
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12rem;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;
+    height: 100vh; */
+    background-color: #545754;
+  }
+  
+  h1 {
+    /* font-size: 3rem; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .addTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color: rgb(10, 11, 10);
+    box-shadow: 0px 0px 10px rgba(1, 85, 68, 0.1);
+  }
+  
+  .addTasktd {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    background-color: rgb(10, 11, 10);
+  }
+  
+  .addTasktd label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    /* background-color: rgb(22, 25, 22); */
+  }
+  
+ .input{
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #555f54;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 18rem;
+    background-color:rgb(10, 11, 10) ;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-bottom: 2px solid #fdf9f9;
+  }
+  
+ 
+
+  button{
+    background: none;
+    border: none;
+  }
+  .tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color: rgb(10, 11, 10);
+    box-shadow: 0px 0px 10px rgba(3, 10, 9, 0.1);
+    /* width: 48%; */
+    margin-left:30.5%;
+    margin-right: 30.5%;
+  }
+
+  button.updateButton{ 
+    background-color: #404240;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding: 7px 15px;
+    border-radius: 7px;
+    margin: 10px;
+  }
+  button.updateButton:hover{
+    background-color: rgb(38, 36, 36);
+  }
+  lable{
+    color: white;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+  }
+
+  .taskadded{
+    color: rgb(223, 215, 215);
+    font-style: oblique;
+    
+    font-size: 1rem;
+
+  }
+  .edit{
+    color: #c2984b;
+    cursor: pointer;
+  }
+  .edit:hover{
+    color:#f1a61b;
+    cursor: pointer;
+  }
+  .delete{
+    color: rgb(231, 92, 88);
+    cursor: pointer;
+  }
+  .delete:hover{
+    color: rgb(254, 59, 52);
+    cursor: pointer;
+  }
+
+
+  .profile {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #545754;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+ 
+  /* Style the userID */
+  .profile h1 {
+    margin: 0;
+    font-size:50px;
+    margin-left: 32.2%;
+  }
+
+  .profile p {
+    font-size: 20px;
+    margin-left: 9px;
+  }
+
+  .profile .accountprofile{
+    font-size:50px;
+  }
+  

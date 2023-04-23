@@ -1,0 +1,93 @@
+.title{
+  text-shadow: 2px 2px 4px #b2aeae;
+  font-size: 40px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-style: oblique;
+}
+
+.card {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  background-color: rgb(62, 56, 56);
+  height: auto;
+  margin-left: 60%;
+  margin-top: 2%;
+
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.completeform {
+  width: 100%;
+}
+.select{
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+.select select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #d7d5d5;
+  cursor: pointer;
+  /* add any other styles you need here */
+}
+
+.form {
+  width: 80%;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.form .span {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  font-style: oblique;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form input {
+  width: 100%;
+  color: white;
+  background-color:  rgb(62, 56, 56);
+  border: none;
+  font-size: 20px;
+  font-style: oblique;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ outline: none;
+ border-bottom: 3px solid #899289;
+}
+.form input:focus{
+  outline: none;
+  border-bottom: 3px solid #fffefe;
+}
+
+.signuplogin{
+  display: flex;
+  margin-top: 0px;
+  color: rgb(195, 191, 191);
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.signuplogin button{
+  font-size: 15px;
+  font-style: oblique;
+  color: rgb(195, 191, 191);
+  cursor: pointer;
+}
+.signuplogin button:hover{
+  color: white;
+}
