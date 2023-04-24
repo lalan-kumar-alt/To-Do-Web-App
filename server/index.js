@@ -98,7 +98,7 @@ app.delete("/delete/:id",async (req,res) => {
   let result = await TodoModel.findByIdAndDelete({_id: id});
   res.send(result);
 })
-
-app.listen(5002, () => {
+const PORT=process.env.PORT||5002
+app.listen(PORT, () => {
   console.log("OK");
 });
