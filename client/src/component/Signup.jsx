@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css";
 import front from "../assests/front.jpg";
+const BASE_URL ="https://to-do-app-zqsw.onrender.com"
 function Signup() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
@@ -13,7 +14,7 @@ function Signup() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    let response = await axios.post("http://localhost:5002/signup", {
+    let response = await axios.post(`${BASE_URL}/signup`, {
       userName: name,
       userEmail: email,
       userPassword: password,

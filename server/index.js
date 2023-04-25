@@ -2,7 +2,7 @@ require("./db/config.js");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-
+const PORT=process.env.PORT||5002
 const app = express();
 app.use(express.json());
 app.use(cors());
@@ -98,7 +98,7 @@ app.delete("/delete/:id",async (req,res) => {
   let result = await TodoModel.findByIdAndDelete({_id: id});
   res.send(result);
 })
-const PORT=process.env.PORT||5002
+
 app.listen(PORT, () => {
   console.log("OK");
 });

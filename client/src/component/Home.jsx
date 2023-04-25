@@ -8,8 +8,9 @@ import Todo from "./Todo";
 import { useLocation, useNavigate } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 // import green from '@material-ui/core/colors/green';
-
+ const BASE_URL ="https://to-do-app-zqsw.onrender.com" 
 function Home() {
+   
   let [title, setTitle] = useState("");
   let [description, setDescription] = useState("");
   let [alltodo, setAlltodo] = useState([]);
@@ -20,7 +21,7 @@ function Home() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    let response = await axios.post("http://localhost:5002/yourtodolist", {
+    let response = await axios.post(`${BASE_URL}/yourtodolist`, {
       userTitle: title,
       userDescription: description,
       userID: userID,
@@ -32,7 +33,7 @@ function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get(`http://localhost:5002/all/`, {
+      const response = await axios.get(`${BASE_URL}/all/`, {
         params: {
           userID: userID,
         },

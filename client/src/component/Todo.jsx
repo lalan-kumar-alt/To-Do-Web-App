@@ -3,13 +3,15 @@ import axios from "axios";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+const BASE_URL ="https://to-do-app-zqsw.onrender.com"
 function Todo({ todo,key,checkuser }) {
   const [newtitle, setNewtitle] = useState("");
   const [newDescription, setNewDescription] = useState("");
   const [showInput, setShowInput] = useState(false);
   const [dummy,setDummy] = useState(false)
   async function handleUpdate(id) {
-    let response = await axios.put("http://localhost:5002/update", {
+    let response = await axios.put(`${BASE_URL}update`, {
       id: id,
       newtitle: newtitle,
       newDescription: newDescription,
@@ -19,7 +21,7 @@ function Todo({ todo,key,checkuser }) {
 
   async function handleDelete(id) {
    
-    let response = await axios.delete(`http://localhost:5002/delete/${id}`);
+    let response = await axios.delete(`${BASE_URL}/delete/${id}`);
     console.log(response)
     setDummy(!dummy);
   }
