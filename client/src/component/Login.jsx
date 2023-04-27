@@ -50,7 +50,7 @@ function Login() {
 
   return (
     <>
-    <h1 style={{color:'gold',margin:'10px'}}>Let's start making your notes:-</h1>
+
       <div  style={{
         backgroundImage: `url(${front})`,
         backgroundRepeat: "no-repeat",
@@ -62,6 +62,7 @@ function Login() {
         left: 0,
       }}>
         <h1 style={{marginRight: "80%"}} className="title">PriorityPlus</h1>
+        <h1 style={{color:'gold',margin:'10px',fontStyle:'italic'}}>Let's start making your notes:-</h1>
         <div className="card">
         <p style={{fontSize:"25px",color:"#FFE5B4",}}>Login</p>
         <div className="select">
