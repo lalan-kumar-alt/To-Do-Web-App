@@ -50,6 +50,7 @@ function Login() {
 
   return (
     <>
+    <h1 style={{color:'gold',margin:'10px'}}>Let's start making your notes:-</h1>
       <div  style={{
         backgroundImage: `url(${front})`,
         backgroundRepeat: "no-repeat",
